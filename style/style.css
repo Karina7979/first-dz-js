@@ -9,6 +9,16 @@ body {
     flex-direction: column;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cart {
+    padding: 8px 10px 8px 10px;
+    border-color: rgb(158, 158, 231);
+}
+
 .products {
     margin-top: 40px;
     display: flex;
@@ -16,9 +26,34 @@ body {
 }
 
 .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 450px;
+    border: 2px solid rgb(226, 150, 162);
+    background-color: rgb(243, 198, 198);
+}
+
+img {
     width: 200px;
-    height: 400px;
-    border: 1px solid grey;
-    background-color: lightgrey;
+    height: 300px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+.buy-btn {
+    padding: 5px 8px 5px 8px;
+    border-color: rgb(107, 26, 107);
+    background-color: rgb(194, 71, 194);
 }
 
