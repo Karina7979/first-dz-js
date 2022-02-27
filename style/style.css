@@ -1,22 +1,31 @@
+html,
 body {
     margin: 0 auto;
-    max-width: 1140px;
-}
-
-.wrapper {
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
+.wrap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 1140px;
+}
+
+.header {
+    background: bisque;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .btn-cart {
     padding: 8px 10px 8px 10px;
     border-color: rgb(158, 158, 231);
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 
 .products {
@@ -57,3 +66,7 @@ p {
     background-color: rgb(194, 71, 194);
 }
 
+/* footer {
+    background-color: blue;
+    height: 80px;
+} */
