@@ -26,6 +26,12 @@ class ProductsList {
 //                 console.log(data);
                  this.render()
             });
+        this._showProducts()
+        .then(data => {
+            this.goods = data.contents;
+            console.log(data.contents);//покажет сначала undefined, а затем массив обьектов где указаны обьекты json
+            this.render()
+        })
     }
     // _fetchProducts(cb){
     //     getRequest(`${API}/catalogData.json`, (data) => {
@@ -42,6 +48,13 @@ class ProductsList {
                 console.log(error);
             });
        
+    }
+    _showProducts() {
+        return fetch(`${API}/getBasket.json`)
+        .then(result => result.json())
+        .catch(error => {
+            console.log(error);
+        });
     }
     calcSum(){
         return this.allProducts.reduce((accum, item) => accum += item.price, 0);
